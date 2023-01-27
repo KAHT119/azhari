@@ -1,0 +1,180 @@
+header {
+  background-color: #ffffff;
+  padding: 40px;
+  text-align: center;
+  font-size: 20px;
+  color: #a1a1a1;
+  height: 110px;
+  text-shadow: 2px 2px 4px #0f0f0f;
+  border-radius: 15px;
+  font-family: "Vogue Regular";
+  
+  
+}
+
+body {
+    background-image: url('yht/bg/ttr.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;  
+    background-size: cover;
+    
+  }
+
+@import url(https://fonts.google.com/specimen/Bebas+Neue);{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container .card
+{
+  position: relative;
+  width: 700px;
+  height: 450px;
+  margin: 20px;
+  display: flex;
+  transition: 0.5s;
+  justify-content: flex-start;
+  align-items: center;
+  border-radius: 3%;
+  background: linear-gradient(89deg, #ffee02,#f11202);
+}
+
+.container .card img
+{
+  position: absolute;
+  bottom: 0%;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 500px;
+  transition: 0.5s;
+}
+
+.container .card:hover img
+{
+  left: 75%;
+  height: 650px;
+
+}
+
+.container .card .content
+{
+  position: relative;
+  width: 50%;
+  left: 20%;
+  padding: 20px 20px 20px 40px;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.5s;
+}
+
+.container .card:hover .content
+{
+  left: 0%;
+  opacity: 1;
+  visibility: visible;
+}
+
+.container .card .content h2
+{
+  color: rgb(0, 0, 0);
+  text-transform: uppercase;
+  font-size: 3em;
+  line-height: 1em;
+}
+
+.container .card .content p
+{
+  color: rgb(0, 0, 0);
+  font-size: 1em;
+}
+
+.container .card .content a
+{
+  position: relative;
+  color: black;
+  background: #fff;
+  display: inline-block;
+  padding: 10px 20px;
+  margin-top: 10px;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+@media (max-width: 991px)
+{
+  .container .card
+  {
+    width: auto;
+    max-width: 600px;
+    align-items: flex-start;
+  }
+  .container .card:hover
+  {
+    height: 600px;
+
+  }
+  .container .card:hover img
+  {
+    left: 50%;
+    height: 350px;
+  }
+  .container .card .content
+  {
+    width: 100%;
+    left: 0;
+    padding: 40px;
+  }
+}
+
+
+
+@media (max-width: 767px)
+{
+  .container
+  {
+    flex-direction: column;
+  }
+  .container .card
+  {
+    margin: 40px 20px;
+  }
+}
+
+@media (max-width: 420px)
+{
+  .container .card .content
+  {
+    padding: 30px;
+  }
+  .container .card:hover img
+  {
+    height: 300px;
+  }
+}
+
+
+
+#BGVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%; 
+  min-height: 100%;
+  opacity: 100%;
+}
